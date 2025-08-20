@@ -11,16 +11,19 @@ import AddReview from './pages/Review';
 
 import Header from './components/Header';
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import './App.css';
 
 function App() {
   return (
     <div>
+      {/* ✅ Use HashRouter for GitHub Pages */}
       <Router>
         <Header />
         <Routes>
+          {/* Redirect root "/" to "/Home" */}
+          <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Project" element={<Project />} />
           <Route path="/UAE" element={<UAE />} />
