@@ -12,7 +12,6 @@ class Header extends React.Component {
     };
     this.clickTimeout = null;
 
-    // Refs for outside click detection
     this.menuIconRef = React.createRef();
     this.navLinksRef = React.createRef();
     this.projectsBtnRef = React.createRef();
@@ -33,7 +32,6 @@ class Header extends React.Component {
       clearTimeout(this.clickTimeout);
       this.clickTimeout = null;
 
-      // ✅ Use React Router navigation instead of window.location.hash
       this.props.navigate("/Project");
     } else {
       this.clickTimeout = setTimeout(() => {
@@ -94,7 +92,10 @@ class Header extends React.Component {
             >
               <FontAwesomeIcon icon={faBars} />
             </i>
-            <img src="./img-vid/logo.png" alt="Logo" />
+
+            {/* ✅ Use public/ path for logo */}
+            <img src="/img-vid/logo.png" alt="Logo" />
+
             <NavLink to="/Home" className="brand">
               <span>Geo Spatial Support</span>
             </NavLink>

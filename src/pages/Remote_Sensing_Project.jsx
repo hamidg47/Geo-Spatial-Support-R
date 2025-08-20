@@ -66,10 +66,7 @@ class Remote extends React.Component {
                   drones. It involves capturing electromagnetic radiation
                   reflected or emitted by objects on the surface, which is then
                   analyzed to derive meaningful data about land, water,
-                  atmosphere, and vegetation. Remote sensing technology plays a
-                  critical role in monitoring environmental changes, natural
-                  disasters, and land cover dynamics with high spatial and
-                  temporal resolution.
+                  atmosphere, and vegetation.
                 </p>
                 <h3>Applications of Remote Sensing</h3>
                 <p><b>• Land Use and Land Cover Mapping:</b> Identifying and monitoring changes in forests, agricultural land, urban areas, and wetlands.</p>
@@ -87,7 +84,7 @@ class Remote extends React.Component {
 
           <section className="Remote_side-image-title" id="Arab_Peninsula">
             <div className="Remote_main-image-left">
-              <img src="/public/img-vid/13.png" alt="Arab Peninsula landcover classification map" />
+              <img src="/img-vid/13.png" alt="Arab Peninsula landcover classification map" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -101,17 +98,17 @@ class Remote extends React.Component {
 
           <section className="Remote_sub-images-layout">
             <div className="Remote_left-sub-images">
-              <img src="./img-vid/14.png" alt="Urban area satellite view 1" />
-              <img src="./img-vid/15.png" alt="Urban area satellite view 2" />
+              <img src="/img-vid/14.png" alt="Urban area satellite view 1" />
+              <img src="/img-vid/15.png" alt="Urban area satellite view 2" />
             </div>
             <div className="Remote_right-sub-image">
-              <img src="./img-vid/16.png" alt="Urban area satellite view 3" />
+              <img src="/img-vid/16.png" alt="Urban area satellite view 3" />
             </div>
           </section>
 
           <section className="Remote_side-image-title" id="2005_2021">
             <div className="Remote_main-image-left">
-              <img src="./img-vid/17.png" alt="Methane emission map of Hampshire" />
+              <img src="/img-vid/17.png" alt="Methane emission map of Hampshire" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -119,39 +116,23 @@ class Remote extends React.Component {
               <hr />
               <p>
                 This study analyzed methane emissions across Hampshire, southern England, 
-                using data from the National Atmospheric Emissions Inventory (NAEI) and 
-                land cover datasets from Digimap for 2007, 2015, and 2021. Methane 
-                emissions were mapped using Inverse Distance Weighting (IDW) interpolation 
-                in QGIS to visualize spatial emission patterns and trends from 2005 to 2021.
-              </p>
-              <p>
-                <b>Emission Sources: </b>
-                The "Processing & Distribution of Petroleum Products" sector was the 
-                dominant methane emitter, with notable emissions from the water, sewerage, 
-                and waste treatment sectors.
-              </p>
-              <p>
-                <b>Trends: </b>
-                Methane emissions showed a peak around 2010 (800 tonnes), followed by a 
-                significant reduction of over 300 tonnes by 2021. This decrease reflects 
-                improvements in industrial practices, stricter regulations, and 
-                technological advancements.
+                using data from the National Atmospheric Emissions Inventory (NAEI)...
               </p>
             </div>
           </section>
 
           <section className="Remote_sub-images-layout">
             <div className="Remote_left-sub-images imag">
-              <img src="./img-vid/18.png" alt="Methane emission sub-map 1" />
+              <img src="/img-vid/18.png" alt="Methane emission sub-map 1" />
             </div>
             <div className="Remote_right-sub-image imag">
-              <img src="./img-vid/19.png" alt="Methane emission sub-map 2" />
+              <img src="/img-vid/19.png" alt="Methane emission sub-map 2" />
             </div>
           </section>
 
           <section className="Remote_side-image-title" id="Sesan_2_Dam">
             <div className="Remote_main-image-left">
-              <img src="./img-vid/20.png" alt="Geomorphic changes map near Lower Sesan 2 Dam" />
+              <img src="/img-vid/20.png" alt="Geomorphic changes map near Lower Sesan 2 Dam" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -159,17 +140,7 @@ class Remote extends React.Component {
               <hr />
               <p>
                 This project investigates the <b>hydro-geomorphological impacts of the Lower Sesan 2 (LS2) Dam</b> 
-                in the Mekong River Basin using Landsat 8 imagery and hydrological analyses. 
-                The Normalized <b>Difference Water Index</b> (NDWI) was employed to delineate and monitor the 
-                reservoir area over time, while <b>erosion and deposition patterns were assessed using discharge, 
-                precipitation, and total suspended solids (TSS) data.</b> 
-                Sen’s slope analysis highlighted changes in flow dynamics before and after dam construction, with 
-                observed increases in discharge. Stable precipitation patterns were recorded across both periods, 
-                suggesting limited influence on geomorphic changes. <b>TSS concentrations during the construction 
-                phase were linked to increased downstream deposition, emphasizing the dam’s effect on sediment 
-                transport dynamics.</b> This analysis provides essential insights into how dam infrastructure affects 
-                hydrology and geomorphology, informing sustainable water resource management and environmental 
-                mitigation strategies.
+                in the Mekong River Basin using Landsat 8 imagery and hydrological analyses...
               </p>
             </div>
           </section>
@@ -189,7 +160,7 @@ class Remote extends React.Component {
 
           <section className="Remote_side-image-title" id="Kakadu_2013_2021">
             <div className="Remote_main-image-left">
-              <img src="./img-vid/21.png" alt="Forest fire and land cover change in Kakadu" />
+              <img src="/img-vid/21.png" alt="Forest fire and land cover change in Kakadu" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -199,24 +170,7 @@ class Remote extends React.Component {
               <hr />
               <p>
                 This project investigates the <b>factors influencing forest fires and land cover</b> changes 
-                in Kakadu National Park, Northern Territory, Australia, from 2013 to 2021. Using 
-                Landsat-derived indices such as the <b>Normalized Difference Vegetation Index (NDVI) 
-                and Normalized Burn Ratio (NBR)</b>, large wildfire events were analyzed for their 
-                impact on vegetation. Post-fire NBR values increased due to spectral changes from 
-                burning, while NDVI consistently declined, indicating reduced vegetation health and 
-                density. Statistical analyses confirmed these patterns, demonstrating the effectiveness 
-                of these indices in monitoring fire-induced landscape changes.
-              </p>
-              <p>
-                <b>Climate variables (precipitation, temperature, specific humidity, and soil moisture)</b> 
-                were analyzed through box plots to identify seasonal variations. The analysis revealed 
-                significant seasonal fluctuations, particularly in precipitation and soil moisture, 
-                which were lower during the middle months, increasing fire susceptibility due to 
-                drier vegetation conditions. However, Mann-Kendall trend analysis indicated no 
-                statistically significant trends in any climate variables over the study period. 
-                Land cover changes, including reductions in forest cover, fluctuations in grasslands, 
-                and the effects of fires on shrublands and savannas, were also assessed as critical 
-                factors for fire management and conservation planning.
+                in Kakadu National Park...
               </p>
             </div>
           </section>
@@ -234,7 +188,7 @@ class Remote extends React.Component {
             </div>
           </section>
 
-          <section className="Remote_side-image-title" id="(2013-2021)">
+          <section className="Remote_side-image-title" id="CCD_PCA">
             <div className="Remote_main-image-left">
               <iframe 
                 width="480" 

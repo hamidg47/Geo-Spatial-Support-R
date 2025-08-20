@@ -16,7 +16,7 @@ function Review() {
     image: null,
   });
 
-  // CSS as JavaScript object
+  // CSS as JS object
   const styles = {
     page: {
       fontFamily: "'Segoe UI', sans-serif",
@@ -55,14 +55,11 @@ function Review() {
       borderRadius: "8px",
       fontSize: "1rem",
     },
-    buttonHover: {
-      backgroundColor: "#163948",
-    },
   };
 
   const handleChange = (e) => {
     const { id, value, files } = e.target;
-    if (files) {
+    if (files && files[0]) {
       setFormData({ ...formData, image: files[0] });
     } else {
       setFormData({ ...formData, [id]: value });
@@ -75,13 +72,13 @@ function Review() {
     const storeReview = (imageBase64) => {
       const newReview = {
         ...formData,
-        image: imageBase64 || "./img-vid/logo.png",
+        image: imageBase64 || "/img-vid/logo.png", // ✅ default image from public
       };
       const reviews = JSON.parse(localStorage.getItem("reviews") || "[]");
       reviews.push(newReview);
       localStorage.setItem("reviews", JSON.stringify(reviews));
 
-      alert("Review submitted! Go back to the contact page to view.");
+      alert("✅ Review submitted! Go back to the Contact page to view it.");
       setFormData({
         name: "",
         country: "",
@@ -102,72 +99,73 @@ function Review() {
 
   return (
     <>
-     
-        <Helmet>
-          <title>{TITLE}</title>
-          <link rel="canonical" href={CANONICAL} />
-          <meta name="description" content={DESC} />
-          <meta name="theme-color" content={Config.THEME_COLOR} />
-        </Helmet>
+      <Helmet>
+        <title>{TITLE}</title>
+        <link rel="canonical" href={CANONICAL} />
+        <meta name="description" content={DESC} />
+        <meta name="theme-color" content={Config.THEME_COLOR} />
+      </Helmet>
 
-    <div style={styles.page}>
-      <div style={styles.container}>
-        <h2 style={styles.heading}>Submit Your Review</h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            id="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            style={styles.input}
-          />
-          <input
-            type="text"
-            id="country"
-            placeholder="Your Country"
-            value={formData.country}
-            onChange={handleChange}
-            required
-            style={styles.input}
-          />
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="Write your review here..."
-            value={formData.message}
-            onChange={handleChange}
-            required
-            style={styles.input}
-          ></textarea>
-          <select
-            id="stars"
-            value={formData.stars}
-            onChange={handleChange}
-            required
-            style={styles.input}
-          >
-            <option value="">Star Rating</option>
-            <option value="⭐️⭐️⭐️⭐️⭐️">5 Stars</option>
-            <option value="⭐️⭐️⭐️⭐️">4 Stars</option>
-            <option value="⭐️⭐️⭐️">3 Stars</option>
-            <option value="⭐️⭐️">2 Stars</option>
-          </select>
-          <label>Upload your image (optional)</label>
-          <input
-            type="file"
-            id="imageUpload"
-            accept="image/*"
-            onChange={handleChange}
-            style={styles.input}
-          />
-          <button type="submit" style={styles.button}>
-            Submit Review
-          </button>
-        </form>
+      <div style={styles.page}>
+        <div style={styles.container}>
+          <h2 style={styles.heading}>Submit Your Review</h2>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              style={styles.input}
+            />
+            <input
+              type="text"
+              id="country"
+              placeholder="Your Country"
+              value={formData.country}
+              onChange={handleChange}
+              required
+              style={styles.input}
+            />
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your review here..."
+              value={formData.message}
+              onChange={handleChange}
+              required
+              style={styles.input}
+            ></textarea>
+            <select
+              id="stars"
+              value={formData.stars}
+              onChange={handleChange}
+              required
+              style={styles.input}
+            >
+              <option value="">Star Rating</option>
+              <option value="⭐️⭐️⭐️⭐️⭐️">5 Stars</option>
+              <option value="⭐️⭐️⭐️⭐️">4 Stars</option>
+              <option value="⭐️⭐️⭐️">3 Stars</option>
+              <option value="⭐️⭐️">2 Stars</option>
+            </select>
+
+            <label>Upload your image (optional)</label>
+            <input
+              type="file"
+              id="image"
+              accept="image/*"
+              onChange={handleChange}
+              style={styles.input}
+            />
+
+            <button type="submit" style={styles.button}>
+              Submit Review
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </>
   );
 }

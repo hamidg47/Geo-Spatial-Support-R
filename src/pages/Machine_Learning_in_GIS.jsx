@@ -31,6 +31,7 @@ class Machine extends React.Component {
           <meta name="theme-color" content={Config.THEME_COLOR} />
         </Helmet>
 
+        {/* ✅ Navigation Links */}
         <nav className="Machine_top-links">
           <ul style={{ textDecoration: "underline" }}>
             <li>
@@ -47,7 +48,7 @@ class Machine extends React.Component {
         </nav>
 
         <main className="Machine_container">
-          {/* Section Heading and Dropdown */}
+          {/* ✅ Section Heading + Dropdown */}
           <section className="Machine_main-heading" id="RemoteSensing">
             <div
               className="Machine_opinion-heading-container"
@@ -63,24 +64,16 @@ class Machine extends React.Component {
             <div className="Machine_fade-line"></div>
 
             {dropdownOpen && (
-              <div
-                className="Machine_opinion-dropdown"
-                id="dropdown"
-                style={{ display: "block" }}
-              >
+              <div className="Machine_opinion-dropdown" id="dropdown">
                 <p>
                   <b>Machine learning (ML)</b> has become a powerful tool in
                   remote sensing, enabling the extraction of valuable insights
                   from vast amounts of satellite and aerial imagery. By
                   leveraging algorithms that learn from data, ML can
                   automatically classify land cover, detect changes, and
-                  identify patterns in complex datasets. Supervised learning
-                  methods, such as Random Forest (RF), Support Vector Machines
-                  (SVM), and deep learning models like Convolutional Neural
-                  Networks (CNNs), are widely used for remote sensing tasks due
-                  to their ability to handle high-dimensional data and extract
-                  spatial and spectral features effectively.
+                  identify patterns in complex datasets.
                 </p>
+
                 <h3>Applications of Machine Learning in Remote Sensing</h3>
                 <p>
                   <b>• Land Cover Classification: </b>ML is used to classify
@@ -117,23 +110,20 @@ class Machine extends React.Component {
                 <p>
                   <b>• Climate Change Analysis:</b> Identifying trends in
                   glacier retreat, sea-level rise, and desertification using
-                  time-series data. Machine learning enhances the speed,
-                  scalability, and accuracy of remote sensing analyses, offering
-                  critical support for environmental monitoring, disaster
-                  response, and sustainable resource management.
+                  time-series data.
                 </p>
               </div>
             )}
           </section>
 
-          {/* Groundwater Prediction Section */}
+          {/* ✅ Groundwater Prediction Section */}
           <section
             className="Machine_side-image-title"
             id="GroundwaterPrediction"
           >
             <div className="Machine_main-image-left">
               <img
-                src="./img-vid/26.png"
+                src="/img-vid/26.png"
                 alt="Machine learning groundwater prediction code visualization"
               />
             </div>
@@ -148,22 +138,17 @@ class Machine extends React.Component {
                 <b>Random Forest (RF)</b> models to predict groundwater levels
                 in the UAE. The models were trained using various climate
                 factors, including the El Niño–Southern Oscillation (ENSO)
-                index and GRACE terrestrial water anomaly data. Below is a
-                detailed description of the model performance based on several
-                key evaluation metrics.
+                index and GRACE terrestrial water anomaly data.
               </p>
             </div>
           </section>
 
-          {/* Graph and Metrics Sections */}
+          {/* ✅ Graph + Metrics */}
           <section className="Machine_sub-images-layout">
             <div className="Machine_left-sub-images">
+              <img src="/img-vid/22.png" alt="LSTM model time series results" />
               <img
-                src="./img-vid/22.png"
-                alt="LSTM model time series results"
-              />
-              <img
-                src="./img-vid/23.png"
+                src="/img-vid/23.png"
                 alt="LSTM model 95 percent confidence interval graph"
               />
             </div>
@@ -171,7 +156,7 @@ class Machine extends React.Component {
               <h4>LSTM Model Performance</h4>
               <p>
                 The LSTM model's performance was evaluated using both training
-                and testing datasets. The evaluation metrics are as follows:
+                and testing datasets.
               </p>
 
               <h4>Training Set Metrics:</h4>
@@ -189,23 +174,17 @@ class Machine extends React.Component {
                 <li>Correlation Coefficient: 0.85</li>
                 <li>Index of Agreement (IA): 0.27</li>
               </ul>
-
-              <p>
-                The testing results indicate better model performance compared
-                to training, with a high correlation coefficient (0.85) and a
-                moderately good NSE value of 0.71.
-              </p>
             </div>
           </section>
 
           <section className="Machine_sub-images-layout">
             <div className="Machine_left-sub-images">
               <img
-                src="./img-vid/24.png"
+                src="/img-vid/24.png"
                 alt="Second LSTM time series output"
               />
               <img
-                src="./img-vid/25.png"
+                src="/img-vid/25.png"
                 alt="Second LSTM 95 percent confidence interval graph"
               />
             </div>
@@ -213,7 +192,7 @@ class Machine extends React.Component {
               <h4>LSTM Model Performance</h4>
               <p>
                 The LSTM model's performance was evaluated using both training
-                and testing datasets. The evaluation metrics are as follows:
+                and testing datasets.
               </p>
 
               <h4>Training Set Metrics:</h4>
@@ -231,12 +210,6 @@ class Machine extends React.Component {
                 <li>Correlation Coefficient: 0.85</li>
                 <li>Index of Agreement (IA): 0.27</li>
               </ul>
-
-              <p>
-                The testing results indicate better model performance compared
-                to training, with a high correlation coefficient (0.85) and a
-                moderately good NSE value of 0.71.
-              </p>
             </div>
           </section>
         </main>

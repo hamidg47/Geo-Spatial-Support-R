@@ -18,12 +18,13 @@ import './App.css';
 function App() {
   return (
     <div>
-      {/* ✅ Use HashRouter for GitHub Pages */}
+      {/* ✅ HashRouter for GitHub Pages */}
       <Router>
         <Header />
         <Routes>
-          {/* Redirect root "/" to "/Home" */}
-          <Route path="/" element={<Navigate to="/Home" />} />
+          {/* Default route → Home */}
+          <Route path="/" element={<Navigate to="/Home" replace />} />
+
           <Route path="/Home" element={<Home />} />
           <Route path="/Project" element={<Project />} />
           <Route path="/UAE" element={<UAE />} />
@@ -34,6 +35,9 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Review" element={<AddReview />} />
+
+          {/* 404 fallback → Home */}
+          <Route path="*" element={<Navigate to="/Home" replace />} />
         </Routes>
       </Router>
     </div>

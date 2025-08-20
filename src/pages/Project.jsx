@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";  // ✅ Use Link for routing
 import Config from "../Config.json";
 
 const TITLE = "Project | " + Config.SITE_TITLE;
@@ -19,7 +20,6 @@ class Project extends React.Component {
   render() {
     return (
       <>
-      
         <Helmet>
           <title>{TITLE}</title>
           <link rel="canonical" href={CANONICAL} />
@@ -27,10 +27,12 @@ class Project extends React.Component {
           <meta name="theme-color" content={Config.THEME_COLOR} />
         </Helmet>
 
+        {/* ✅ Public folder image */}
         <header className="project_header">
-          <img src="./img-vid/landsat_ts_cfo.gif" alt="Header" />
+          <img src="/img-vid/landsat_ts_cfo.gif" alt="Header" />
         </header>
 
+        {/* Projects Navigation */}
         <section className="opinion-section">
           <div
             className="opinion-heading-container"
@@ -47,25 +49,27 @@ class Project extends React.Component {
             id="dropdown"
             style={{ textDecoration: "underline" }}
           >
-            <a href="./UAE Climate Report 2024.html">• UAE Climate Report 2024</a>
-            <a href="./Remote Sensing Project.html">• Remote Sensing Projects</a>
-            <a href="./Machine Learning in GIS.html">• Machine Learning Projects</a>
-            <a href="./Land Deformation Detection.html">• Land Deformation Detection</a>
-            <a href="./Disaster Detection.html">• Disaster Detection and Mapping</a>
+            <Link to="/UAE">• UAE Climate Report 2024</Link>
+            <Link to="/Remote">• Remote Sensing Projects</Link>
+            <Link to="/Machine">• Machine Learning Projects</Link>
+            <Link to="/Land">• Land Deformation Detection</Link>
+            <Link to="/Disaster">• Disaster Detection and Mapping</Link>
           </div>
         </section>
 
+        {/* Example Highlight Section */}
         <section className="center-heading-section">
           <h5 className="center-heading">
-            <a
-              href="./UAE Climate Report 2024.html"
+            <Link
+              to="/UAE"
               style={{ textDecoration: "none", color: "white" }}
             >
               UAE Climate Change Report 2024
-            </a>
+            </Link>
           </h5>
         </section>
 
+        {/* Info Section */}
         <section className="info-section">
           <div className="info-content">
             <div className="info-text">
@@ -82,7 +86,8 @@ class Project extends React.Component {
               </p>
             </div>
             <div className="info-image">
-              <img src="./img-vid/12.png" alt="Geospatial Insights" />
+              {/* ✅ Use absolute path from public/ */}
+              <img src="/img-vid/12.png" alt="Geospatial Insights" />
             </div>
           </div>
         </section>

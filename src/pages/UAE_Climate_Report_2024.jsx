@@ -27,7 +27,6 @@ class UAE extends React.Component {
         </Helmet>
 
         <main className="UAE_container">
-
           <h1 className="UAE_climate-title">UAE Climate Change Report 2024</h1>
 
           <div className="UAE_climate-content">
@@ -44,24 +43,24 @@ class UAE extends React.Component {
 
             <div className="UAE_doc-preview-full">
               {/* IFRAME PDF (desktop only) */}
-              <iframe
-                className="UAE_pdf-embed"
-                src="./uae-climate-report.pdf#toolbar=0&navpanes=0&view=FitH"
-                title="UAE Climate Report PDF"
-              ></iframe>
+                <iframe
+                  className="UAE_pdf-embed"
+                  src="/uae-climate-report.pdf#toolbar=0&navpanes=0&view=FitH"
+                  title="UAE Climate Report PDF"
+                ></iframe>
 
-              {/* Poster Image PDF (mobile only) */}
-              <a
-                className="UAE_pdf-download-mobile"
-                href="./uae-climate-report.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/public/img-vid/9.png"
-                  alt="Cover preview of UAE Climate Report PDF"
-                />
-              </a>
+                <a
+                  className="UAE_pdf-download-mobile"
+                  href="/uae-climate-report.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img-vid/9.png"
+                    alt="Cover preview of UAE Climate Report PDF"
+                  />
+                </a>
+
             </div>
           </div>
 
@@ -110,12 +109,12 @@ class UAE extends React.Component {
               }}
             >
               <img
-                src="/public/img-vid/35.jpg"
+                src="/img-vid/35.jpg"
                 alt="Satellite map illustrating UAE climate patterns"
                 style={{ maxWidth: "100%", width: "33rem" }}
               />
               <img
-                src="/public/img-vid/36.jpg"
+                src="/img-vid/36.jpg"
                 alt="Graph depicting UAE climate change statistics"
                 style={{ maxWidth: "100%", width: "400px" }}
               />
@@ -132,68 +131,68 @@ class UAE extends React.Component {
               </span>
             </p>
 
-              <h2
-                style={{
-                  color: "#004b73",
-                  marginTop: "22px",
-                  marginBottom: "12px",
-                }}
-              >
-                Major focus was on
-              </h2>
+            <h2
+              style={{
+                color: "#004b73",
+                marginTop: "22px",
+                marginBottom: "12px",
+              }}
+            >
+              Major focus was on
+            </h2>
 
-              <ol className="UAE_ol">
-                <li className="UAE_li">
-                  <strong>Precipitation Pattern Analysis</strong>
-                  <ul className="UAE_ul">
-                    <li className="UAE_li">
-                      Analyzed ground and satellite data (GPM, CHIRPS, PERSIANN CDR) to
-                      study UAE precipitation trends.
-                    </li>
-                    <li className="UAE_li">
-                      Linked 2024 heavy rainfall events to climate change impacts.
-                    </li>
-                  </ul>
-                </li>
-                <li className="UAE_li">
-                  <strong>Urban Flooding Events</strong>
-                  <ul className="UAE_ul">
-                    <li className="UAE_li">
-                      Mapped flooding in Dubai, Abu Dhabi, Al Ain, Kalba, Fujairah using
-                      geospatial tools.
-                    </li>
-                    <li className="UAE_li">
-                      Assessed impacts and suggested improved drainage and urban planning.
-                    </li>
-                  </ul>
-                </li>
-                <li className="UAE_li">
-                  <strong>Groundwater Estimation</strong>
-                  <ul className="UAE_ul">
-                    <li className="UAE_li">
-                      Used GRACE data to evaluate groundwater decline.
-                    </li>
-                    <li className="UAE_li">
-                      Predicted future trends using machine learning (ML).
-                    </li>
-                  </ul>
-                </li>
-                <li className="UAE_li">
-                  <strong>Sea-Level Rise Impact</strong>
-                  <ul className="UAE_ul">
-                    <li className="UAE_li">
-                      Analyzed risks to UAE coasts, including flooding, erosion, and
-                      saltwater intrusion.
-                    </li>
-                    <li className="UAE_li">
-                      Proposed coastal adaptation strategies.
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </section>
-
-      </main>
+            <ol className="UAE_ol">
+              <li className="UAE_li">
+                <strong>Precipitation Pattern Analysis</strong>
+                <ul className="UAE_ul">
+                  <li className="UAE_li">
+                    Analyzed ground and satellite data (GPM, CHIRPS, PERSIANN
+                    CDR) to study UAE precipitation trends.
+                  </li>
+                  <li className="UAE_li">
+                    Linked 2024 heavy rainfall events to climate change impacts.
+                  </li>
+                </ul>
+              </li>
+              <li className="UAE_li">
+                <strong>Urban Flooding Events</strong>
+                <ul className="UAE_ul">
+                  <li className="UAE_li">
+                    Mapped flooding in Dubai, Abu Dhabi, Al Ain, Kalba,
+                    Fujairah using geospatial tools.
+                  </li>
+                  <li className="UAE_li">
+                    Assessed impacts and suggested improved drainage and urban
+                    planning.
+                  </li>
+                </ul>
+              </li>
+              <li className="UAE_li">
+                <strong>Groundwater Estimation</strong>
+                <ul className="UAE_ul">
+                  <li className="UAE_li">
+                    Used GRACE data to evaluate groundwater decline.
+                  </li>
+                  <li className="UAE_li">
+                    Predicted future trends using machine learning (ML).
+                  </li>
+                </ul>
+              </li>
+              <li className="UAE_li">
+                <strong>Sea-Level Rise Impact</strong>
+                <ul className="UAE_ul">
+                  <li className="UAE_li">
+                    Analyzed risks to UAE coasts, including flooding, erosion,
+                    and saltwater intrusion.
+                  </li>
+                  <li className="UAE_li">
+                    Proposed coastal adaptation strategies.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+        </main>
       </>
     );
   }
