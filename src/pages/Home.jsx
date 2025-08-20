@@ -24,7 +24,7 @@ class Home extends React.Component {
 
         <header className="header-section">
           <video autoPlay muted loop className="header-video">
-            <source src="./img vid/Video.mp4" type="video/mp4" />
+            <source src="/public/img vid/Video.mp4" type="video/mp4" />
           </video>
           <div className="header-overlay">
             <div className="text-content">
@@ -34,7 +34,7 @@ class Home extends React.Component {
             </div>
             <div className="image-content">
               <img
-                src="./img vid/asdasd.jpg"
+                src="/public/img vid/asdasd.jpg"
                 alt="Project preview"
                 className="video-thumbnail clickable-image"
               />
@@ -49,7 +49,7 @@ class Home extends React.Component {
           <div className="work-content">
             <div className="work-image">
               <img
-                src="./img vid/37.png"
+                src="/public/img vid/37.png"
                 alt="Diagram showing climate impact assessment"
               />
             </div>
@@ -79,7 +79,7 @@ class Home extends React.Component {
           <div className="swot-content">
             <div className="swot-images-left">
               <img
-                src="./img vid/1.png"
+                src="/public/img vid/1.png"
                 alt="SWOT map of UAE climate data"
               />
             </div>
@@ -110,7 +110,7 @@ class Home extends React.Component {
           <div className="swot-content">
             <div className="swot-images-left">
               <img
-                src="./img vid/2.png"
+                src="/public/img vid/2.png"
                 alt="SWOT satellite data visualization of water distribution"
               />
             </div>
@@ -135,7 +135,7 @@ class Home extends React.Component {
                 </p>
               </div>
               <img
-                src="./img vid/3.png"
+                src="/public/img vid/3.png"
                 alt="Map of Ethiopia generated from SWOT satellite data"
                 className="swot-bottom-image clickable-image"
               />
@@ -146,11 +146,11 @@ class Home extends React.Component {
         <section className="centered-image-section">
           <div className="centered-image-container">
             <img
-              src="./img vid/4.png"
+              src="/public/img vid/4.png"
               alt="Comparison of water levels dataset 1"
             />
             <img
-              src="./img vid/5.png"
+              src="/public/img vid/5.png"
               alt="Comparison of water levels dataset 2"
             />
           </div>
@@ -168,14 +168,14 @@ class Home extends React.Component {
           <div className="la-wildfire-content">
             <div className="la-image-40">
               <img
-                src="./img vid/6.png"
+                src="/public/img vid/6.png"
                 alt="Map showing wildfire spread in Los Angeles"
               />
             </div>
 
             <div className="la-image-60">
               <img
-                src="./img vid/7.png"
+                src="/public/img vid/7.png"
                 alt="Map showing nitrogen oxide changes in Los Angeles"
               />
             </div>
@@ -190,7 +190,7 @@ class Home extends React.Component {
           <div className="project-row">
             <div className="media-block">
               <img
-                src="./img vid/8.png"
+                src="/public/img vid/8.png"
                 alt="Visualization from remote sensing project"
               />
               <a href="./Remote">
@@ -200,7 +200,7 @@ class Home extends React.Component {
 
             <div className="media-block">
               <img
-                src="./img vid/9.png"
+                src="/public/img vid/9.png"
                 alt="Visual from UAE climate change report"
               />
               <a href="./UAE">

@@ -146,7 +146,7 @@ class Land extends React.Component {
           <section className="Land_side-image-title" id="Delhi_Groundwater">
             <div className="Land_main-image-left">
               <img
-                src="./img vid/27.jpg"
+                src="/public/img vid/27.jpg"
                 alt="Delhi groundwater depletion analysis"
               />
             </div>
@@ -171,18 +171,18 @@ class Land extends React.Component {
           {/* Section: Sub Images Layout */}
           <section className="Land_sub-images-layout">
             <div className="Land_left-sub-images">
-              <img src="./img vid/28.png" alt="Urban subsidence zone 1" />
-              <img src="./img vid/29 .png" alt="Urban subsidence zone 2" />
+              <img src="/public/img vid/28.png" alt="Urban subsidence zone 1" />
+              <img src="/public/img vid/29 .png" alt="Urban subsidence zone 2" />
             </div>
             <div className="Land_right-sub-image">
-              <img src="./img vid/30.jpg" alt="Urban subsidence zone 3" />
+              <img src="/public/img vid/30.jpg" alt="Urban subsidence zone 3" />
             </div>
           </section>
 
           <section className="Land_side-image-title" id="PS_InSAR">
             <div className="Land_main-image-left">
               <img
-                src="./img vid/31.jpg"
+                src="/public/img vid/31.jpg"
                 alt="PS InSAR and groundwater anomaly in Lahore"
               />
             </div>
@@ -215,7 +215,7 @@ class Land extends React.Component {
           <section className="Land_side-image-title" id="Landslide">
             <div className="Land_main-image-left">
               <img
-                src="./img vid/32.png"
+                src="/public/img vid/32.png"
                 alt="Landslide and deformation in Khost City"
               />
             </div>
@@ -249,11 +249,11 @@ class Land extends React.Component {
           <section className="Land_two-images-section">
             <div className="Land_two-images-wrapper">
               <img
-                src="./img vid/33.png"
+                src="/public/img vid/33.png"
                 alt="Damage proxy mapping before earthquake"
               />
               <img
-                src="./img vid/34.png"
+                src="/public/img vid/34.png"
                 alt="Damage proxy mapping after earthquake"
               />
             </div>

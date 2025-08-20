@@ -27,13 +27,6 @@ class UAE extends React.Component {
         </Helmet>
 
         <main className="UAE_container">
-          <Helmet>
-            <title>{TITLE}</title>
-            <link rel="canonical" href={CANONICAL} />
-            <meta name="description" content={DESC} />
-            <meta name="theme-color" content={Config.THEME_COLOR} />
-          </Helmet>
-
           <h1 className="UAE_climate-title">UAE Climate Change Report 2024</h1>
 
           <div className="UAE_climate-content">
@@ -52,7 +45,7 @@ class UAE extends React.Component {
               {/* IFRAME PDF (desktop only) */}
               <iframe
                 className="UAE_pdf-embed"
-                src="./uae-climate-report.pdf#toolbar=0&navpanes=0&view=FitH"
+                src="/public/uae-climate-report.pdf#toolbar=0&navpanes=0&view=FitH"
                 title="UAE Climate Report PDF"
               ></iframe>
 
@@ -64,7 +57,7 @@ class UAE extends React.Component {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./img vid/9.png"
+                  src="/public/img vid/9.png"
                   alt="Cover preview of UAE Climate Report PDF"
                 />
               </a>
@@ -116,12 +109,12 @@ class UAE extends React.Component {
               }}
             >
               <img
-                src="./img vid/35.jpg"
+                src="/public/img vid/35.jpg"
                 alt="Satellite map illustrating UAE climate patterns"
                 style={{ maxWidth: "100%", width: "33rem" }}
               />
               <img
-                src="./img vid/36.jpg"
+                src="/public/img vid/36.jpg"
                 alt="Graph depicting UAE climate change statistics"
                 style={{ maxWidth: "100%", width: "400px" }}
               />

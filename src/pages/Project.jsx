@@ -28,7 +28,7 @@ class Project extends React.Component {
         </Helmet>
 
         <header className="project_header">
-          <img src="./img vid/landsat_ts_cfo.gif" alt="Header" />
+          <img src="/public/img vid/landsat_ts_cfo.gif" alt="Header" />
         </header>
 
         <section className="opinion-section">
@@ -82,7 +82,7 @@ class Project extends React.Component {
               </p>
             </div>
             <div className="info-image">
-              <img src="./img vid/12.png" alt="Geospatial Insights" />
+              <img src="/public/img vid/12.png" alt="Geospatial Insights" />
             </div>
           </div>
         </section>
