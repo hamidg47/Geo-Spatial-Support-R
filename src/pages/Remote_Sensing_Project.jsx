@@ -87,7 +87,7 @@ class Remote extends React.Component {
 
           <section className="Remote_side-image-title" id="Arab_Peninsula">
             <div className="Remote_main-image-left">
-              <img src="/public/img vid/13.png" alt="Arab Peninsula landcover classification map" />
+              <img src="/public/img-vid/13.png" alt="Arab Peninsula landcover classification map" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -101,17 +101,17 @@ class Remote extends React.Component {
 
           <section className="Remote_sub-images-layout">
             <div className="Remote_left-sub-images">
-              <img src="/public/img vid/14.png" alt="Urban area satellite view 1" />
-              <img src="/public/img vid/15.png" alt="Urban area satellite view 2" />
+              <img src="./img-vid/14.png" alt="Urban area satellite view 1" />
+              <img src="./img-vid/15.png" alt="Urban area satellite view 2" />
             </div>
             <div className="Remote_right-sub-image">
-              <img src="/public/img vid/16.png" alt="Urban area satellite view 3" />
+              <img src="./img-vid/16.png" alt="Urban area satellite view 3" />
             </div>
           </section>
 
           <section className="Remote_side-image-title" id="2005_2021">
             <div className="Remote_main-image-left">
-              <img src="/public/img vid/17.png" alt="Methane emission map of Hampshire" />
+              <img src="./img-vid/17.png" alt="Methane emission map of Hampshire" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -142,16 +142,16 @@ class Remote extends React.Component {
 
           <section className="Remote_sub-images-layout">
             <div className="Remote_left-sub-images imag">
-              <img src="/public/img vid/18.png" alt="Methane emission sub-map 1" />
+              <img src="./img-vid/18.png" alt="Methane emission sub-map 1" />
             </div>
             <div className="Remote_right-sub-image imag">
-              <img src="/public/img vid/19.png" alt="Methane emission sub-map 2" />
+              <img src="./img-vid/19.png" alt="Methane emission sub-map 2" />
             </div>
           </section>
 
           <section className="Remote_side-image-title" id="Sesan_2_Dam">
             <div className="Remote_main-image-left">
-              <img src="/public/img vid/20.png" alt="Geomorphic changes map near Lower Sesan 2 Dam" />
+              <img src="./img-vid/20.png" alt="Geomorphic changes map near Lower Sesan 2 Dam" />
             </div>
             <div className="Remote_main-title-right">
               <hr />
@@ -189,7 +189,7 @@ class Remote extends React.Component {
 
           <section className="Remote_side-image-title" id="Kakadu_2013_2021">
             <div className="Remote_main-image-left">
-              <img src="/public/img vid/21.png" alt="Forest fire and land cover change in Kakadu" />
+              <img src="./img-vid/21.png" alt="Forest fire and land cover change in Kakadu" />
             </div>
             <div className="Remote_main-title-right">
               <hr />

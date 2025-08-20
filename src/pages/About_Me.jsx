@@ -91,8 +91,8 @@ class About extends React.Component {
           </div>
 
           <div className="about_education-images">
-            <img src="/public/img vid/10.png" alt="Degree 1" />
-            <img src="/public/img vid/11.png" alt="Degree 2" />
+            <img src="./img-vid/10.png" alt="Degree 1" />
+            <img src="./img-vid/11.png" alt="Degree 2" />
           </div>
           <h1 className="about_heading">You can follow my lectures on YouTube</h1>
 

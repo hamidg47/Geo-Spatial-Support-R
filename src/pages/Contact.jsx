@@ -71,7 +71,7 @@ class Contact extends React.Component {
       <div className="contact_body">
         {/* Background Video */}
         <video autoPlay muted loop className="contact_bg-video">
-          <source src="/public/img vid/Video.mp4" type="video/mp4" />
+          <source src="./img-vid/Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -88,7 +88,7 @@ class Contact extends React.Component {
         <div className="contact-wrapper">
           {/* Info Section */}
           <div className="contact_info-section">
-            <img src="/public/img vid/asdasd.jpg" alt="Hamid Gulzar" />
+            <img src="./img-vid/asdasd.jpg" alt="Hamid Gulzar" />
             <h3>Contact Information</h3>
             <p>
               <i><FontAwesomeIcon icon={faUser} /></i> Hamid Gulzar

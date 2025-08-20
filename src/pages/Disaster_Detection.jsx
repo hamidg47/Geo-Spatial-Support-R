@@ -95,7 +95,7 @@ class Disaster extends React.Component {
           <section className="Disaster_side-image-title" id="Volcanic_Eruption">
             <div className="Disaster_main-image-left">
               <img
-                src="/public/img vid/GeoColor_GEOS-West-Zoom-2022 JAN 15 04_00Z-to-2022 JAN 15 10_00Z.gif"alt="Overview Image" />
+                src="./img-vid/GeoColor_GEOS-West-Zoom-2022 JAN 15 04_00Z-to-2022 JAN 15 10_00Z.gif"alt="Overview Image" />
             </div>
             <div className="Disaster_main-title-right">
               <hr />

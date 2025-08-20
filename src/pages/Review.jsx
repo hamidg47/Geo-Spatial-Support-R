@@ -75,7 +75,7 @@ function Review() {
     const storeReview = (imageBase64) => {
       const newReview = {
         ...formData,
-        image: imageBase64 || "/public/img vid/logo.png",
+        image: imageBase64 || "./img-vid/logo.png",
       };
       const reviews = JSON.parse(localStorage.getItem("reviews") || "[]");
       reviews.push(newReview);

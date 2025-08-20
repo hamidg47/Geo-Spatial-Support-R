@@ -133,7 +133,7 @@ class Machine extends React.Component {
           >
             <div className="Machine_main-image-left">
               <img
-                src="/public/img vid/26.png"
+                src="./img-vid/26.png"
                 alt="Machine learning groundwater prediction code visualization"
               />
             </div>
@@ -159,11 +159,11 @@ class Machine extends React.Component {
           <section className="Machine_sub-images-layout">
             <div className="Machine_left-sub-images">
               <img
-                src="/public/img vid/22.png"
+                src="./img-vid/22.png"
                 alt="LSTM model time series results"
               />
               <img
-                src="/public/img vid/23.png"
+                src="./img-vid/23.png"
                 alt="LSTM model 95 percent confidence interval graph"
               />
             </div>
@@ -201,11 +201,11 @@ class Machine extends React.Component {
           <section className="Machine_sub-images-layout">
             <div className="Machine_left-sub-images">
               <img
-                src="/public/img vid/24.png"
+                src="./img-vid/24.png"
                 alt="Second LSTM time series output"
               />
               <img
-                src="/public/img vid/25.png"
+                src="./img-vid/25.png"
                 alt="Second LSTM 95 percent confidence interval graph"
               />
             </div>
