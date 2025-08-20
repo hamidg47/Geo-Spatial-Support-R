@@ -95,7 +95,7 @@ class Header extends React.Component {
               <FontAwesomeIcon icon={faBars} />
             </i>
             <img src="./img vid/logo.png" alt="Logo" />
-            <NavLink to="/" className="brand">
+            <NavLink to="/Home" className="brand">
               <span>Geo Spatial Support</span>
             </NavLink>
           </div>
@@ -107,7 +107,7 @@ class Header extends React.Component {
               id="navLinks"
               ref={this.navLinksRef}
             >
-              <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+              <NavLink to="/Home" className={({ isActive }) => (isActive ? "active" : "")}>
                 Home
               </NavLink>
 
