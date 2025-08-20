@@ -94,7 +94,7 @@ class Header extends React.Component {
             >
               <FontAwesomeIcon icon={faBars} />
             </i>
-            <img src="./img vid/logo.png" alt="Logo" />
+            <img src="./img-vid/logo.png" alt="Logo" />
             <NavLink to="/Home" className="brand">
               <span>Geo Spatial Support</span>
             </NavLink>
